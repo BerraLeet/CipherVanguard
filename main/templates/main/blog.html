@@ -1,0 +1,123 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Your content specific to project.html -->
+    <h2 class="text-center px-5" style="padding-top: 10px; padding-bottom: 20px;">Celebrating Victory in the Student CTF!</h2>
+    <div class="content-header">
+        <header class="text-left mr-1">
+            <article class="flex-container">
+                <div class="text-container">
+                    
+                    <img class="logo" src="{% static 'images/ctf1.jpg' %}" alt="ctf1">            
+                </div>
+                <div class="text-content">
+                    <p class="text-leftcenter"><p>A big shoutout to my incredible team! I'm thrilled to announce that we emerged victorious in the Student Capture The Flag (CTF) competition. One of the most educating weekends in a looong time.</p>
+
+                    <p>I want to express my gratitude to Outpost24 for organizing this CTF. Their commitment to cybersecurity is remarkable, and the competition provided a platform for us to learn and grow.</p>
+              
+                    <p><b>Last but not least!</b> Biggest gratitude to my amazing team members for their hard work, collaboration, and expertise. Each one of you played a crucial role in achieving this success. Together, we make an unbeatable force.</p>
+              
+                    <p>Here's to more victories and continued success in our cybersecurity journey!</p>
+                    <h3><i> <br>Co0kieDo0ugh will strike again</i></h3> 
+                </div>
+            </article>
+        </header>
+        <div class="proxcontainer">
+            <img class="imgprox" src="{% static 'images/proxxe.png' %}" alt="Proxmox">
+        </div>
+        <div class="proxcontainer">
+            <div class="content">
+                
+    
+                
+                    <h1>Exploring Proxmox and Setting Up a Home Server</h1>
+            
+                    <p>I'm currently diving into the world of Proxmox and setting up a home server to enhance my understanding of server management and security practices. One of objectives was to segregate my network LAN for improved security.</p>
+            
+                    <p>To fortify the server which is a type1 virtualized Ubuntu, I've brought a combination of security measures, utilizing iptables, chroot, seccomp, and AppArmor. These tools play a crucial role in hardening the server environment, ensuring a robust defense against potential vulnerabilities.</p>
+            
+                    <p>As well some ACL with users of least privilege principle, In my pursuit of a secure setup, I've integrated Snort for comprehensive logging capabilities and alerts to notify me to take precautions. Snort also allows me to monitor network traffic and detect potential threats, providing an additional layer of security to the server. To counteract brute force attacks, I've implemented Fail2Ban combined with iptables, a proactive security measure that automatically blocks malicious actors attempting unauthorized access.</p>
+            
+                    <p>Moreover, I've established rules to prevent Distributed Denial of Service (DDoS) attacks, safeguarding the server's availability and performance. This proactive approach to security involves crafting rulesets that mitigate the impact of potential DDoS attempts.</p>
+            
+                    <p>As part of my ongoing homelab projects, I've made a old but good computer , transforming it into a dedicated firewall. Configuring OPNsense on this system allows me to explore the complexity of firewall management and network segmentation. Through this hands-on experience, I gain valuable insights into the functionality of firewalls and their role in network security.</p>
+            
+                    <p>In the homelab environment, I actively engage in network segregation exercises, experimenting with different configurations to deepen my understanding of network architecture. This approach enables me to get a grip of network segmentation and its impact on overall security.</p>
+            
+                    <p>Taking my commitment a step further, I've initiated penetration testing on the server. This involves simulating various attack scenarios to identify potential vulnerabilities. Subsequently, I dedicate time to harden the server based on the insights gained from these self-conducted penetration tests. This iterative process not only fortifies the server against potential threats but also enhances my knowledge of security best practices.</p>
+            
+                    <p>Overall, my exploration of Proxmox, home server setup, and involvement in homelab projects constitute a holistic journey toward mastering server management and cybersecurity. Through continuous learning and practical experimentation, I strive to create a robust and secure computing environment. I've been thinking of this like a cat and mouse game with myself where i try to find loop holes and also patch these sores while making the server working and still being able to host this site. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text-container {
+            text-align: center;
+            padding-bottom: 30px;          
+        }
+
+        .logo {
+            width: 300px; /* Adjust the width as needed */  
+            height: auto;                     
+            padding-bottom: 40px;
+            padding-right: 30px;
+        }
+
+        .text-content {
+            flex-grow: 1;
+            padding-left: 20px;
+            
+        }
+
+        .lightmode {
+            padding-top: 30;
+            padding-bottom: 30px;                     
+            width: 800px ;
+            height: auto;                                  
+            margin: 20px 0;
+        }
+
+        .proxcontainer {
+            padding-top: 20px;
+            padding-bottom: 5%;
+        }
+
+
+        .imgprox {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .logo {
+                padding-right: 0;
+            }
+
+            .text-content {
+                padding-left: 0;
+            }
+
+            .proxcontainer {
+                padding-bottom: 10%;
+            }
+
+            .imgprox {
+                margin-right: 0;
+            }
+        }
+    </style>
+{% endblock %}

@@ -1,0 +1,251 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+{% load static %}
+    <!-- Your additional content goes here -->
+    <div class="content-wrapper">
+        <div class="content-main">
+            
+            <img src="{% static 'images/berra.jpg' %}" alt="My image">
+            <p class="username">@Bernhard Nordén</p>
+            <p><b>Let's connect!</b></p>
+            <!-- GitHub Button -->
+            <button onclick="redirectToGitHub()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+            </button>
+
+            <!-- LinkedIn Button -->
+            <button onclick="redirectToLinkedIn()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                </svg>
+            </button>
+        </div>
+        <div class="content-header">
+            <header class="text-left mr-1">
+                <article>                     
+                    <h1 class="text-center px-5"><b>whoami</b></h1>
+                    <p class="text-leftcenter px-5">Greetings! I am <b>Bernhard Nordén</b>, a 30-year-old Swedish student currently dedicated <br>to advancing my expertise in Cyber Security at IT högskolan in Stockholm.<br> Passionate about cultivating a secure digital landscape, I am enthusiastic about staying at the <br>forefront of technological advancements.<br><br>
+
+                        Outside the realm of cybersecurity, I find joy and discipline in my commitment to physical fitness, <br>regularly engaging in training at the gym. Additionally,<br> I have developed a eye for capturing moments through the lens with my creativity in the art of photography.<br><br><br>
+                        
+                        As a testament to my commitment to technology, you can explore my portfolio of projects on <b>Github</b>,<br> showcasing my hands-on experience and contributions to the field. I invite you to connect with me on <b>LinkedIn</b>,<br> where we can further discuss our shared interests and potential collaborations.<br>
+                        
+                        I am excited about the possibilities that lie ahead and look forward to connecting with like-minded professionals.<br> Let's embark on this journey of growth and innovation together.<br>
+                        <br><br> As a part of my studies i have LIA-period where i will be looking for internship at a tech company that will occur in fall of 2024. <br>
+                        To see my resumé click below on linkedin button and connect or just scroll down, aswell read my blog on this site<br> where i discuss cybersecurity, my homelab and projects etc. <b>Enjoy</b>  </p>
+                        <br><br><br><br>
+                        <div class="skills-section text-left px-5">
+                            <h2 class="section-title text-left">Skills</h2>
+                            <ul class="skills-list text-left ">
+                              <li class="skill-item text-left"><b>Python</b></li>
+                              <li class="skill-item text-left"><b>CTF (Capture The Flag)</b></li>
+                              <li class="skill-item text-left"><b>Networking</b></li>
+                            </ul>
+                        </div>
+                </article>
+            </header>
+        </div>
+    </div>
+
+    <body>
+
+        <header>
+            <h1>My Resume english</h1>
+        </header>
+    
+        <section id="experience" class="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <h3><i>Ardeen - Operations Manager</i></h3><br>
+                <p>Oversaw main operational activities.</p>
+                <p>Specialized in providing support for individuals facing challenges.</p>
+                <p>Ensured and followed up on individual care plans.</p>
+                <p>Recruited qualified personnel and managed official contracts (offentliga upphandlingar).</p>
+                <p>Established and maintained organizational structure, enhancing operational efficiency.</p><br>
+            </div>
+            
+            <div class="job">
+                <h3><i>Villbergagruppen - Teraphist</i></h3><br>
+                <p>Youth-focused interventions for a healthy lifestyle</p>
+                <p>Independent structuring of days with lectures/lessons.</p>
+                <p>Systematized records and provided continuous reports to clients.</p>
+                <p>Developed good relationships for effective negotiations.</p>
+                <p>Organized agendas for staff meetings and consulted with management.</p>
+                <p>Arranged long-term plans.</p><br>
+            </div>
+    
+            <div class="job">
+                <h3><i>Scandic Hotels - Head Waiter</i></h3><br>
+                <p>Planned restaurant sessions with table placement and booking coordination.</p>
+                <p>Provided instructions to service staff and maintained a good environment.</p>
+                <p>Monitored daily changes and made quick decisions for restructuring.</p>
+                <p>Presented to guests and was actively involved in meeting customer needs.</p><br>
+            </div>
+    
+            <div class="job">
+                <h3><i>7-Eleven - Cashier</i></h3><br>
+                <p>Planned advertising and sales campaigns.</p>
+                <p>Strong focus on customer contact and increasing sales.</p>
+                <p>Emphasized district controls for statistical improvement and internal competitions.</p><br>
+            </div>
+
+        </section>
+    
+        <section id="education" class="education">
+            <h2>Education</h2>
+    
+            <div class="school">
+                <h3><i>Cybersecurity Specialist IT-Högskolan</i></h3><br>
+                <p>I am currently studying cybersecurity at IT University,</p>
+                <p>where I have gained proficiency in both Linux and Windows environments.</p>
+                <p>My scripting skills include Bash and PowerShell, and I am actively using Python in various projects.</p>
+                <p>I've been diving  into the Tkinter library, see further in my Git profile</p>
+                <p>One of my notable projects involves setting up this website using Django as backend, and the frontend</p>
+                <p>incorporating HTML, CSS, and small amount of JavaScript. Additionally, I have established a personal </p>
+                <p>homelab using Proxmox, where I host my website. This hobby has allowed me to build a robust </p>
+                <p>infrastructure within my network, involving firewall configuration, the implementation of IDS for different </p>
+                <p>alerts and logging. and network segmentation. I have a big interest in Capture The Flag (CTF) challenges and </p>
+                <p>passion for penetrationtesting drive me to joy from problem-solving and undertaking new projects and challenges.</p>
+            </div>
+    
+        </section>
+    </body>
+
+    <style>
+        /* Additional styles specific to this template */
+        .custom-style {
+            color: #ff0000;
+        }
+    
+        img {
+            width: 100%; /* Make the image responsive by setting width to 100% */
+            max-width: 400px; /* Set a maximum width to avoid stretching on larger screens */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+    
+        /* Button Styling */
+        button {
+            background-color: #17a2b8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #138496;
+        }
+    
+        /* Custom Styles for Content */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column; /* Adjust the layout for smaller screens */
+            align-items: center;
+        }
+    
+        .content-main {
+            order: 1; /* Move content-main to the end on smaller screens */
+            text-align: center; /* Center text on smaller screens */
+        }
+    
+        .content-header {
+            margin-right: 0; /* Remove margin on smaller screens */
+        }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+    
+        section {
+            max-width: 100%; /* Adjust the width for smaller screens */
+            margin: 20px 10px; /* Add margin on smaller screens */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+    
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+    
+        p {
+            margin: 0 0 10px;
+        }
+    
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        li {
+            margin-bottom: 5px;
+        }
+    
+        .experience,
+        .education {
+            margin-bottom: 20px;
+        }
+    
+        /* Media Queries for Responsive Design */
+        @media (min-width: 768px) {
+            .content-wrapper {
+                flex-direction: row; /* Revert to row layout on larger screens */
+                align-items: flex-start;
+            }
+    
+            .content-main {
+                order: -1; /* Move content-main back to the beginning */
+                text-align: left; /* Align text to left on larger screens */
+            }
+    
+            .content-header {
+                margin-right: 20px; /* Add margin on larger screens */
+            }
+        }
+    </style>
+    
+
+    </style>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    function redirectToGitHub() {
+        window.location.href = 'https://github.com/BerraLeet';
+    }
+
+    function redirectToLinkedIn() {
+        window.location.href = 'https://www.linkedin.com/in/karl-bernhard-nord%C3%A9n/';
+    }
+</script>
+{% endblock %}

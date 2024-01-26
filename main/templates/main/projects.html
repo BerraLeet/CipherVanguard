@@ -1,0 +1,66 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Your content specific to project.html -->
+    <div class="content-header">
+        <header class="text-left mr-1">
+            <article class="flex-container">
+                <div class="text-container">
+                    <h2 class="text-center px-5" style="padding-bottom: 40px;">Crypt Warden</h2>
+                    <img class="logo" src="{% static 'images/cryptwarden-logo.jpg' %}" alt="Cryptwarden Logo">            
+                </div>
+                <div class="text-content">
+                    <p class="text-leftcenter">Crypt Warden is a password generator built on tkinter using the customtkinter extension.<br>
+                    User will have a few options to choose a character set and from those a random string will be generated,<br>
+                    I recommend using a long password and choose as many character sets as possible to make sure it is strong.<br>
+                    Also in addition to generating a secure string, the user is provided a copy to clipboard button, a dark mode switch.
+                    <br><br>
+                    Crypt Warden will later on migrate to a password manager to be able to store generated passwords securely.<br>
+                    More of this project I will explain in my blog. If you are interested in getting the source code to try Crypt Warden, please
+                    visit my Github to get started. It is a pretty straightforward copy-paste process after installing dependencies!  
+                </div>
+            </article>
+        </header>
+        <div class="lightmode-container">
+            <img class="lightmode" src="{% static 'images/cw_lightmode_screenshot.png' %}" alt="Cryptwarden lightmode">
+        </div>
+    </div>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text-container {
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to separate the logo from text on smaller screens */
+        }
+
+        .logo {
+            width: 100%; /* Make the logo take 100% of the container width */
+            max-width: 300px; /* Set a maximum width for larger screens */
+            height: auto;
+            margin-right: 20px; /* Add margin to separate the logo from text on larger screens */
+        }
+
+        .text-content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+        .lightmode {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .flex-container {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+        }
+    </style>
+{% endblock %}

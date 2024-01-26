@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Making a more secure future on the internet">
+    <title>Cipher Vanguard</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #218ae6, #0c0c0c);
+            color: #fff;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease, border-bottom 0.3s ease;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav a:hover {
+            color: #17a2b8;
+        }
+
+        .content {
+            padding-top: 80px; /* Adjust this value based on the height of your navbar */
+        }
+
+        footer {
+            color: #fff;
+            text-align: left;
+            padding: 10px 20px; /* Add padding for better visibility */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .navbar-nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            .content {
+                padding-top: 60px; /* Adjust this value based on the height of your navbar */
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav">
+    <!-- Navbar Section -->
+    <nav id="navbarNav" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Cipher Vanguard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'home' %}">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'projects' %}">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'blog' %}">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'lifestyle' %}">lifestyle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>2024 @ Bernhard Nordén</p>
+    </footer>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
