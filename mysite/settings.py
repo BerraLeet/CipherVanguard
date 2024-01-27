@@ -140,6 +140,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+
+# Ensure that all traffic is redirected to HTTPS
+SECURE_SSL_REDIRECT = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
