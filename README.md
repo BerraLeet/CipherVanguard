@@ -62,9 +62,9 @@ inside env/Scripts run command:
 http://127.0.0.1:8000/ or type localhost:8000 inside your webbrowser
 
 ## Generate new SECRET_KEY
-from django.core.management.utils import get_random_secret_key
+    from django.core.management.utils import get_random_secret_key
 
-print(get_random_secret_key())
+    print(get_random_secret_key())
  
 ## Create environmentvariable .env
 put Secret key and remember to turn DEBUG off before deployment
@@ -189,7 +189,10 @@ heroku login
 heroku keys:add
 ### Create project in heroku
 heroku create
+
 git push heroku (branch name)
+
+Now its all setup! 
 
 # Contributing
 Feel free to contribute to this project. If you have suggestions or find issues, please open an issue or submit a pull request.
