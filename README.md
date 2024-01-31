@@ -152,7 +152,7 @@ i implemented Bootstrap 5 which comes with alot nice looking templates and cool 
 
 ### Make Procfile
 
-(bash) touch Procgile
+(bash) touch Procfile
 
 (bash) nano Procfile
 
