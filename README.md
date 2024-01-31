@@ -67,20 +67,20 @@ http://127.0.0.1:8000/ or type localhost:8000 inside your webbrowser
     print(get_random_secret_key())
  
 ## Create environmentvariable .env
-put Secret key and remember to turn DEBUG off before deployment
+put Secret key in the .env and remember to turn DEBUG off before deployment
 SECRET_KEY=your_goes_here
 DEBUG=False
 
 ## Edit Settings.py
-from dotenv import load_dotenv
-
-load_dotenv()
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-
-DEBUG = os.environ.get('DEBUG') == 'True'
-
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+    from dotenv import load_dotenv
+    
+    load_dotenv()
+    
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    
+    DEBUG = os.environ.get('DEBUG') == 'True'
+    
+    STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 ## Add your app
 edit settings.py  
@@ -88,9 +88,9 @@ Installed_APPS
 'main.apps.MainConfig'
 
 (save settings) cmd 
-    python manage.py migrate
+python manage.py migrate
 
-    python manage.py makemigrations main
+python manage.py makemigrations main
 
 ## Creates admin login
     python manage.py createsuperuser
