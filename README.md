@@ -49,13 +49,13 @@ inside env/Scripts run command:
 
     activate
 
-    (env) python.exe -m pip install --upgrade pip
+    python.exe -m pip install --upgrade pip
 
-    (env) pip install -r requirements.txt
+    pip install -r requirements.txt
 
-    (env) django-admin startproject mysite
+    django-admin startproject mysite
 
-    (env) cd mysite
+(env) cd mysite
 
 ## start server
 (env) python manage.py runserver
@@ -88,12 +88,12 @@ Installed_APPS
 'main.apps.MainConfig'
 
 (save settings) cmd 
-(env) python manage.py migrate
+    python manage.py migrate
 
-(env) python manage.py makemigrations main
+    python manage.py makemigrations main
 
 ## Creates admin login
-(env) python manage.py createsuperuser
+    python manage.py createsuperuser
 
 ## Collect static files
 Create a folder  called static inside
@@ -148,7 +148,7 @@ i implemented Bootstrap 5 which comes with alot nice looking templates and cool 
 
 
 # Heroku setup
-(env) pip install django-heroku
+    pip install django-heroku
 
 ### Make Procfile
 
@@ -156,7 +156,7 @@ i implemented Bootstrap 5 which comes with alot nice looking templates and cool 
 
 (bash) nano Procfile
 
-(Procfile) web: gunicorn mysite.wsgi
+(Procfile)     web: gunicorn mysite.wsgi
 
 ## Edit settings.py
     import os
