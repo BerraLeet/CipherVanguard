@@ -147,7 +147,7 @@ i implemented Bootstrap 5 which comes with alot nice looking templates and cool 
 (bash) git commit -m "Initial commit"
 
 
-# Heroku setup
+## Heroku setup
     pip install django-heroku
 
 ### Make Procfile
